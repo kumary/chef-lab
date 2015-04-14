@@ -1,0 +1,1000 @@
+   29  ls
+   30  cd nodes/
+   31  cp /tmp/kumary.json .
+   32  ls
+   33  vi kumary.json 
+   34  ls
+   35  cd ..
+   36  ls
+   37  cd roles/
+   38  ls
+   39  vi starter.rb 
+   40  sudo chef-client
+   41  ls
+   42  cd ~
+   43  ls
+   44  cd chef-repo/
+   45  ls
+   46  ls -latr
+   47  cd .
+   48  ls
+   49  cd ./.
+   50  ls
+   51  knife
+   52  knife node list
+   53  knife bootstrap uvo1c9qqxcvhmbuzuja.vm.cld.sr  --ssh-user root --ssh-password Qe0b9oPbcU  --run-list java
+   54  find ./ -type *.json
+   55  find ./ -type f *.json
+   56  find ./ -name *.json
+   57  ls
+   58  cd cookbooks/
+   59  ls
+   60  cd java-1.7.0/
+   61  ls
+   62  cd attributes/
+   63  ls
+   64  vi default.rb 
+   65  ls
+   66  cd ..
+   67  ld
+   68  ls
+   69  cd ..
+   70  ls
+   71  knife cookbook create maven
+   72  ls
+   73  cd  maven
+   74  ls
+   75  cd attributes/
+   76  ls
+   77  cd ../..
+   78  ls
+   79  cd java-1.7.0/
+   80  ls
+   81  cd attributes/
+   82  ls
+   83  vi default.rb 
+   84  pwd
+   85  cd ../../maven
+   86  ls
+   87  vi metadata.rb 
+   88  ls
+   89  cd attributes/
+   90  vi default.rb
+   91  ls
+   92  cd ..
+   93  ls
+   94  cd recipes/
+   95  ls
+   96  vi default.rb 
+   97  ls
+   98  cd ..
+   99  ls
+  100  vi metadata.rb 
+  101  cd recipes/
+  102  ls
+  103  vi default.rb 
+  104  cd ~
+  105  ls
+  106  cd chef-repo/
+  107  ls
+  108  knife cookbook upload maven
+  109  knife bootstrap uvo1c9qqxcvhmbuzuja.vm.cld.sr  --ssh-user root --ssh-password Qe0b9oPbcU  --run-list maven
+  110  knife 
+  111  knife cookbook site install maven 3.2.3
+  112  knife cookbook  install maven 3.2.3
+  113  chef-client
+  114  chef-client run_list
+  115  ls
+  116  ls -ltr
+  117  knife cookbooks run maven
+  118  lschef-client --local-mode --runlist webserver
+  119  chef-client --local-mode --runlist webserver
+  120  chef-client --local-mode --runlist maven 3.2.3
+  121  vi /root/.chef/local-mode-cache/cache/chef-stacktrace.out
+  122  chef-client --local-mode --runlist maven
+  123  q!
+  124  cd cookbooks/java-1.7.0/
+  125  ls
+  126  cd recipes/
+  127  ls
+  128  vi default.rb 
+  129  ls
+  130  cd ..
+  131  ls
+  132  cd maven-2.2.1/
+  133  ls
+  134  cd recipes/
+  135  ls
+  136  vi maven2.rb 
+  137  vi maven.rb 
+  138  cd ~
+  139  ls
+  140  chef-client --local-mode --runlist maven
+  141  cd chef-repo/
+  142  chef-client --local-mode --runlist maven
+  143  echo $PATH
+  144  mvn
+  145  vi /etc/profile.d/maven.sh
+  146  cd /opt
+  147  ls
+  148  cd maven 
+  149  ls -ltr
+  150  cd apache-maven-3.2.3-bin.tar.gz
+  151  cd apache-maven-3.2.3
+  152  cd /usr/local
+  153  ls
+  154  cd apache-maven-3.2.3/
+  155  ls
+  156  cd ~/chef-repo/
+  157  clear
+  158  chef-client --local-mode --runlist maven
+  159  clear
+  160  chef-client --local-mode --runlist maven
+  161  mvn
+  162  cd /usr/local/
+  163  ls
+  164  ls -ltr
+  165  cd /usr/local/apache-maven-3.2.3
+  166  ls
+  167  cd -
+  168  cd maven/
+  169  ls
+  170  vi /etc/profile.d/maven.sh
+  171  export $PATH
+  172  ls
+  173  cd -
+  174  echo $M2_HOME
+  175  cd chef-repo/
+  176  ls
+  177  cd cookbooks/
+  178  ls
+  179  cd maven
+  180  ls
+  181  cd ..
+  182  cd java-1.7.0/
+  183  ls
+  184  cd attributes/
+  185  ls
+  186  vi default.rb 
+  187  ls
+  188  cd ..
+  189  ls
+  190  cd recipes/
+  191  ls
+  192  cd default.rb 
+  193  vi default.rb 
+  194  ls
+  195  cd ../
+  196  ls
+  197  cd ..
+  198  ls
+  199  cd maven
+  200  cd ..
+  201  cd maven-2.2.1/
+  202  ls
+  203  cd recipes/
+  204  ls
+  205  vi maven.rb 
+  206  cd ../../java-1.7.0/
+  207  ls
+  208  cd recipes/
+  209  ls
+  210  vi default.rb 
+  211  cd ..
+  212  cd ../maven
+  213  ls
+  214  cd attributes/
+  215  ls
+  216  vi default.rb 
+  217  pwd
+  218  cd ../../java-1.7.0/
+  219  cd recipes/
+  220  ls
+  221  vi default.rb 
+  222  ls
+  223  pwd
+  224  cd ../../maven
+  225  ls
+  226  cd attributes/
+  227  ls
+  228  vi default.rb 
+  229  cd ../../
+  230  ls
+  231  cd maven
+  232  ls
+  233  cd recipes/
+  234  ls
+  235  vi default.rb 
+  236  cd ../attributes/
+  237  vi default.rb 
+  238  pwd
+  239  cd ../../java-1.7.0/attributes/
+  240  vi default.rb 
+  241  cd ../../maven
+  242  ls
+  243  cd attributes/
+  244  vi default.rb 
+  245  cd ../recipes/
+  246  vi default.rb 
+  247  cd ../attributes/
+  248  vi default.rb 
+  249  cd chef-repo/
+  250  history
+  251  chef-client --local-mode --runlist maven
+  252  maven
+  253  mvn
+  254  echo $PATH
+  255  ls
+  256  cd cookbooks/
+  257  ls
+  258  cd maven
+  259  ls
+  260  cd attributes/
+  261  ls
+  262  vi default.rb 
+  263  ls
+  264  cd ..
+  265  ls
+  266  cd recipes/
+  267  ls
+  268  vi default.rb 
+  269  chef-client --local-mode --runlist maven
+  270  cd /usr/local/
+  271  ls
+  272  ls -ltr
+  273  rm -f apache-maven-3.2.3
+  274  rm -rf apache-maven-3.2.3
+  275  ls
+  276  ls -ltr
+  277  rm -rf maven 
+  278  ls -ltr
+  279  cd ~/chef-repo/
+  280  rm -rf apache-maven-3.2.3
+  281  ls
+  282  chef-client --local-mode --runlist maven
+  283  sh /etc/profile.d/maven.sh
+  284  cd /etc/profile.d/
+  285  ls
+  286  vi maven.sh 
+  287  sh  maven.sh 
+  288  echo $PATH
+  289  mvn
+  290  cd /usr/local/
+  291  ls
+  292  lsl -ltr
+  293  ls -ltr
+  294  cd maven/
+  295  ls
+  296  cd bin/
+  297  ls
+  298  mvn
+  299  ls -ltr
+  300  mvn
+  301  sh mvn
+  302  cd /etc/profile.d/
+  303  ls
+  304  vi maven.sh 
+  305  cd /opt
+  306  mvn
+  307  export M2_HOME=/usr/local/maven
+  308  mvn
+  309  echo $M2_HOME
+  310  export PATH=${M2_HOME}/bin:${PATH}
+  311  echo PATH
+  312  echo $PATH
+  313  maven
+  314  mvn
+  315  cd ~
+  316  cd chef-repo/
+  317  ls
+  318  history
+  319  knife bootstrap 107.170.202.15  --ssh-user root --ssh-password Qe0b9oPbcU  --run-list java
+  320  cd ~
+  321  cd .ssh/
+  322  ls
+  323  vi known_hosts 
+  324  vi id_rsa.pub
+  325  cd ~
+  326  cd chef-repo/
+  327  knife bootstrap 107.170.202.15  --ssh-user root --ssh-password Qe0b9oPbcU  --run-list java
+  328  cd ~
+  329  cd .ssh/
+  330  ls
+  331  vi authorized_keys 
+  332  ls -ltr
+  333  vi known_hosts 
+  334  cd ~/chef-repo/
+  335  knife bootstrap 107.170.202.15  --ssh-user root --ssh-password Qe0b9oPbcU  --run-list java
+  336  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list java
+  337  ls
+  338  cd cookbooks/
+  339  ls
+  340  cd java-1.7.0/
+  341  ls
+  342  cd recipes/
+  343  ls
+  344  vi default.rb 
+  345  cd ../..
+  346  ls
+  347  cd maven
+  348  ls
+  349  cd recipes/
+  350  ls
+  351  vi default.rb 
+  352  cd ~/chef-repo/
+  353  ls
+  354  knife cookbook upload maven
+  355  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven
+  356  ls
+  357  cd cookbooks/maven/recipes/
+  358  ls
+  359  vi default.rb 
+  360  cd ~/chef-repo/
+  361  knife cookbook upload maven
+  362  ls
+  363  cd cookbooks/maven/recipes/
+  364  vi default.rb 
+  365  cd ~/chef-repo/
+  366  knife cookbook upload maven
+  367  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven
+  368  vi /tmp/chef-script20140927-2042-1sow2xm\
+  369  vi /tmp/chef-script20140927-2042-1sow2xm
+  370  ls
+  371  cd cookbooks/
+  372  ls
+  373  cd maven
+  374  ls
+  375  cd recipes/
+  376  ls
+  377  vi default.rb 
+  378  knife cookbook upload maven
+  379  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven
+  380  vi /var/chef/cache/chef-stacktrace.out
+  381  cd chef-repo/
+  382  ls
+  383  cd cookbooks/
+  384  ls
+  385  cd maven
+  386  ls
+  387  cd re
+  388  cd recipes/
+  389  ls
+  390  vi default.rb 
+  391  cd ../..
+  392  ls
+  393  cd ..
+  394  knife cookbook upload maven
+  395  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven
+  396  q!
+  397  cd cookbooks/maven/recipes/
+  398  ls
+  399  vi default.rb 
+  400  wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.2.3/binaries/apache-maven-3.2.3-bin.tar.gz
+  401  cd /opt
+  402  ls
+  403  s -ltr
+  404  ls -ltr
+  405  rm -rf apache-maven-3.2.3-bin.tar.gz.*
+  406  ls -ltr
+  407  rm -rf maven 
+  408  ls
+  409  rm -rf apache-maven-3.2.3-bin.tar.gz
+  410  ls
+  411  cd ~
+  412  cd chef-repo/
+  413  ls
+  414  cd cookbooks/
+  415  cd maven
+  416  ls
+  417  cd re
+  418  cd recipes/
+  419  ls
+  420  rm -rf apache-maven-3.2.3-bin.tar.gz 
+  421  vi default.rb 
+  422  cd ../..
+  423  ls
+  424  cd chef-repo/
+  425  ls
+  426  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven 3.2.3
+  427   cd cookbooks/maven/recipes/
+  428  ls
+  429  vi default.rb 
+  430  cd ..
+  431  ls
+  432  cd ..
+  433  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven 3.2.3
+  434  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list java
+  435  ls
+  436  cd cookbooks/
+  437  ls
+  438  cd java-1.7.0/
+  439  ls
+  440  cd attributes/
+  441  ls
+  442  vi default.rb 
+  443  cd ..
+  444  ls
+  445  cd recipes/
+  446  ls
+  447  vi default.rb 
+  448  pwd
+  449  cd ../
+  450  cd ..
+  451  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list java
+  452  cd cookbooks/
+  453  ls
+  454  cd java-1.7.0/
+  455  ls
+  456  cd attributes/
+  457  ls
+  458  vi default.rb 
+  459  cd ..
+  460  knife cookbook upload java-1.7.0
+  461  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list java
+  462  knife cookbook upload maven
+  463  knife bootstrap 107.170.202.15 --ssh-user root --ssh-password july52014 --run-list maven 3.2.3
+  464  history
+  465  ls
+  466  cd chef-repo/
+  467  ls
+  468  knife
+  469  yum update
+  470  yum install git
+  471  wget https://community.opscode.com/cookbooks/jboss7/versions/0.10.1/download
+  472  ls
+  473  cd cookbooks/
+  474  ls
+  475  cd ..
+  476  ls
+  477  ls -ltr
+  478  cd ..
+  479  ls
+  480  wget https://community.opscode.com/cookbooks/jboss7/versions/0.10.1/download
+  481  wget https://community.opscode.com/cookbooks/jboss7/versions/0.10.1
+  482  wget https://community.opscode.com/cookbooks/jboss7/versions/0.10.1/download/jboss7.gz
+  483  wget https://community.opscode.com/cookbooks/jboss7/versions/0.10.1/jboss7.gz
+  484  ls
+  485  cd chef-repo/
+  486  ls
+  487  cd cookbooks/
+  488  ls
+  489  cd chef-repo/
+  490  knife
+  491  knife node list
+  492  cd ~
+  493  ls
+  494  cd chef-repo/`
+  495  cd chef-repo/
+  496  ls
+  497  cd chef-repo/
+  498  knife --version
+  499  knife client list
+  500  ls
+  501  cd .chef/
+  502  ls
+  503  vi knife.rb 
+  504  cd ..
+  505  ls
+  506  git
+  507  ifconfig
+  508  knife client list
+  509  cd  chef-repo/
+  510  knife client list
+  511  knife client delete Check your ops-chef
+  512  knife client delete ops-chef
+  513  knife client list
+  514  ls
+  515  cd chef-repo/
+  516  ls
+  517  cd chef-repo/
+  518  ls
+  519  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr -x root -p Bb9sO3A91W 
+  520  ls -ltr
+  521  cd cookbooks/
+  522  ls
+  523  cd  chef-repo/
+  524  knife client list
+  525  knife
+  526  knife client list
+  527  knife client delete centos63.example.com
+  528  knife client list
+  529  ssh uvo1ulalxvrkj8h4aj4.vm.cld.sr
+  530  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr -x root -p Bb9sO3A91W -N module1
+  531  knife bootstrap 10.160.34.98  -x root -p Bb9sO3A91W -N module1
+  532  ls
+  533  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr  -x root -p Bb9sO3A91W -N module1
+  534  ssh uvo1ulalxvrkj8h4aj4.vm.cld.sr
+  535  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr  -x root -p Bb9sO3A91W -N module1
+  536  knife
+  537  knife bootstrap
+  538  knife bootstrap --help
+  539  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr  -x root -p Bb9sO3A91W -N module1 -P 22
+  540  knife 
+  541  ls
+  542  cd .chef/
+  543  ls
+  544  vi knife.rb 
+  545  cd ..
+  546  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr  -x root -p Bb9sO3A91W
+  547  knife bootstrap 107.170.202.15  -x root -p july52014 -N chef-node1
+  548  knife bootstrap 107.170.202.15  -x root -P july52014 -N chef-node1
+  549  knife bootstrap 107.170.202.15  -x root -P july52014 -N module1
+  550  vi /var/chef/cache/chef-stacktrace.out
+  551  knife bootstrap 107.170.202.15  -x root -P july52014 -N module1 --runlist java
+  552  knife bootstrap 107.170.202.15  -x root -P july52014 -N module1 -r java
+  553  knife bootstrap 107.170.202.15  -x root -P july52014 -N module1
+  554  knife bootstrap 107.170.202.15  -x root -P july52014 -N example-node1
+  555  knife bootstrap uvo1ulalxvrkj8h4aj4.vm.cld.sr  -x root -P Bb9sO3A91W  -N example-node2
+  556  knife client list
+  557  knife client delete example-node1
+  558  knife bootstrap 107.170.202.15  -x root -P july52014 -N chef-digitalocean-box
+  559  which chef-client
+  560  ls
+  561  cd cookbooks/
+  562  ls
+  563  cd ..
+  564  ls
+  565  vi webserver.rb 
+  566  q!
+  567  cd chef-repo/
+  568  ls
+  569  vi webserver.rb 
+  570  cd  chef-repo/
+  571  ls
+  572  history
+  573  knife client list
+  574  knife client delete chef-digitalocean-box
+  575  knife bootstrap 107.170.202.15  -x root -P july52014 -N chef-digitalocean-box
+  576  knife edit
+  577  ls
+  578  knife
+  579  lds
+  580  ls
+  581  vi webserver.rb 
+  582  ls
+  583  knife node
+  584  knife node edit chef-digitalocean-box
+  585  set EDITOR=vi
+  586  knife node edit chef-digitalocean-box
+  587  set EDITOR=vim
+  588  ls
+  589  echo $EDITOR
+  590  set EDITOR=vi
+  591  export EDITOR=vi
+  592  knife node edit chef-digitalocean-box
+  593  ls
+  594  cd cookbooks/
+  595  ls
+  596  cd webserver/
+  597  lks
+  598  ls
+  599  cd recipes/p
+  600  cd recipes/
+  601  ls
+  602  vi default.rb 
+  603  knife
+  604  knife node
+  605  knife node run_list add chef-digitalocean-box "recipe[webserver]"
+  606  knife node edit chef-digitalocean-box
+  607  cd ..
+  608  ls
+  609  cd templates/
+  610  ls
+  611  cd default/
+  612  ls
+  613  vi index.html.erb 
+  614  cd ../..
+  615  ls
+  616  cd libraries/
+  617  ls
+  618  cd ..
+  619  ls
+  620  cd recipes/
+  621  ls
+  622  vi default.rb 
+  623  pwd
+  624  cd ../templates/default/
+  625  vi index.html.erb 
+  626  cd ~/chef-repo/
+  627  ls
+  628  vi webserver.rb 
+  629  cd cookbooks/
+  630  ls
+  631  cd maven
+  632  ls
+  633  cd attributes/
+  634  ls
+  635  vi default.rb 
+  636  cd ..
+  637  cd recipes/
+  638  ls
+  639  vi default.rb 
+  640  cd chef-repo/
+  641  ls
+  642  git init
+  643  ls
+  644  cd /etc/yum.repos.d/
+  645  ls
+  646  cd ~/chef-repo/
+  647  ls
+  648  cd cookbooks/
+  649  ls
+  650  knife cookbook create jenkins
+  651  cd jenkins/
+  652  ls
+  653  cd recipes/
+  654  ls
+  655  vi default.rb 
+  656  sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+  657  cd /etc/yum.repos.d/
+  658  ls
+  659  vi jenkins.repo 
+  660  cd ~/chef-repo/
+  661  ls
+  662  cd cookbooks/
+  663  ls
+  664  cd jenkins/
+  665  ls
+  666  cd recipes/
+  667  ls
+  668  vi default.rb 
+  669  pwd
+  670  cd ..
+  671  cd ../cookbook
+  672  cd ../cookbooks
+  673  ls
+  674  cd ..
+  675  ls
+  676  knife cookbook upload jenkins
+  677  knife node
+  678  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  679  cd jenkins/
+  680  ls
+  681  cd recipes/
+  682  ls
+  683  vi default.rb 
+  684  knife cookbook upload jenkins
+  685  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  686  vi default.rb 
+  687  knife cookbook upload jenkins
+  688  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  689  vi default.rb 
+  690  cd ~/chef-repo/
+  691  ls
+  692  cd cookbooks/
+  693  ls
+  694  ls -ltr
+  695  cd maven
+  696  ls
+  697  cd recipes/
+  698  ls
+  699  vi default.rb 
+  700  ohai
+  701  cd chef-repo/
+  702  ls
+  703  cd cookbooks/
+  704  ls
+  705  cd jenkins/
+  706  ls
+  707  cd recipes/
+  708  vi default.rb 
+  709  knife cookbook upload jenkins
+  710  vi default.rb 
+  711  cd chef-repo/
+  712  ls
+  713  cd cookbooks/
+  714  ls
+  715  cd jenkins/
+  716  ls
+  717  cd recipes/
+  718  ls
+  719  vi default.rb 
+  720  knife cookbook upload jenkins
+  721  vi default.rb 
+  722  knife cookbook upload jenkins
+  723  history
+  724  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  725  vi default.rb 
+  726  ls
+  727  cd ..
+  728  ls
+  729  cd ..
+  730  ls
+  731  cd webserver/
+  732  ls
+  733  cd templates/
+  734  ls
+  735  cd default/
+  736  ls
+  737  vi index.html.erb 
+  738  pwd
+  739  cd ../../../
+  740  ls
+  741  cd jenkins/
+  742  ls
+  743  cd recipes/
+  744  ls
+  745  vi default.rb 
+  746  knife cookbook upload jenkins
+  747  vi default.rb 
+  748  knife cookbook upload jenkins
+  749  cd ..
+  750  ls
+  751  cd ..
+  752  ls
+  753  cd java-1.7.0/
+  754  ls
+  755  cd attributes/
+  756  ls
+  757  vi default.rb 
+  758  ls
+  759  cd ..
+  760  ls
+  761  cd recipes/
+  762  ls
+  763  vi default.rb 
+  764  ls
+  765  cd ..
+  766  pwd
+  767  cd ..
+  768  ls
+  769  cd java-1.7.0/
+  770  ls
+  771  cd attributes/
+  772  ls
+  773  vi default.rb 
+  774  cd ..
+  775  cd recipes/
+  776  ls
+  777  vi default.rb 
+  778  cd ../attributes/
+  779  vi default.rb 
+  780  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  781  pwd
+  782  cd ..
+  783  cd jenkins/
+  784  ls
+  785  cd attributes/
+  786  ls
+  787  vi default.rb 
+  788  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  789  cd chef-repo/
+  790  ls
+  791  cd cookbooks/
+  792  ls
+  793  cd jenkins/
+  794  ls
+  795  cd attributes/
+  796  ls
+  797  vi default.rb
+  798  ls
+  799  pwd
+  800  cd ..
+  801  ls
+  802  cd recipes/
+  803  ls
+  804  vi default.rb 
+  805  knife cookbook upload jenkins
+  806  ls
+  807  pwd
+  808  vi default.rb 
+  809  knife cookbook upload jenkins
+  810  vi default.rb 
+  811  knife cookbook upload jenkins
+  812  vi default.rb 
+  813  knife cookbook upload jenkins
+  814  vi default.rb 
+  815  knife cookbook upload jenkins
+  816  vi default.rb 
+  817  knife cookbook upload jenkins
+  818  vi default.rb 
+  819  knife cookbook upload jenkins
+  820  cd chef-repo/
+  821  ls
+  822  cd cookbooks/
+  823  ls
+  824  cd  jenkins/
+  825  ls
+  826  cd recipes/
+  827  ls
+  828  vi default.rb 
+  829  cd /opt
+  830  ls
+  831  cd chef/
+  832  ls
+  833  cd ..
+  834  cd chef-repo/
+  835  ls
+  836  cd cookbooks/
+  837  ls
+  838  cd maven
+  839  ls
+  840  cd re
+  841  cd recipes/p
+  842  cd recipes/
+  843  ls
+  844  vi default.rb 
+  845  pwd
+  846  cd ..
+  847  ls
+  848  cd webserver/
+  849  ls
+  850  cd re
+  851  cd recipes/
+  852  ls
+  853  vi default.rb 
+  854  pwd
+  855  cd ../..
+  856  ls
+  857  cd cd jenkins/
+  858  cd jenkins/
+  859  ls
+  860  cd attributes/
+  861  ls
+  862  vi default.rb 
+  863  ls
+  864  cd ..
+  865  ls
+  866  cd recipes/
+  867  ls
+  868  vi default.rb 
+  869  cd chef-repo/
+  870  ks
+  871  ls
+  872  cd cookbooks/
+  873  ls
+  874  cd jenb
+  875  cd jenkins/
+  876  ls
+  877  cd templates/
+  878  ls
+  879  cd default/
+  880  ls
+  881  pwd
+  882  vi jenkins-config-rhel.erb
+  883  grep "JENKINS*" jenkins-config-rhel.erb >> out1.txt
+  884  vi out.txt
+  885  diff out.txt out1.txt 
+  886  ls -ltr
+  887  vi jenkins-config-rhel.erb 
+  888  cd ../../recipes/
+  889  ls
+  890  vi default.rb 
+  891  knife cookbook upload jenkins
+  892  history
+  893  knife node run_list add chef-digitalocean-box "recipe[jenkins]"
+  894  cd chef-repo/
+  895  lsa
+  896  ls
+  897  cd cookbooks/
+  898  ls
+  899  cd webserver/
+  900  ls
+  901  cd ..
+  902  cd jenkins/
+  903  ls
+  904  pwd
+  905  ls -ltr
+  906  cd attributes/
+  907  ls
+  908  vi default.rb 
+  909  cd ../templates/default/
+  910  ls
+  911  cd chef-repo/
+  912  knife bootstrap
+  913  knife bootstrap -help
+  914  history knife
+  915  history 
+  916  knife bootstrap 192.168.56.101  -x root -P toor -N chef-solaris
+  917  knife bootstrap 192.168.56.101  -x opens -P reverse -N chef-solaris
+  918  cd chef-repo/
+  919  ls
+  920  cd  chef-repo/
+  921  ls
+  922  cd cookbooks/
+  923  ls
+  924  cd jenkins/
+  925  cd ..
+  926  ls
+  927  cd ..
+  928  ls
+  929  mkdir -p data_bags/vhosts
+  930  cd data_bags/vhosts/
+  931  vi bears.json
+  932  vi clowns.json
+  933  cp bears.json clowns.json 
+  934  vi clowns.json 
+  935  vi bears.json 
+  936  cp bears.json clowns.json 
+  937  vi clowns.json 
+  938  cd che
+  939  cd ~/chef-repo/
+  940  knife upload ./data_bags/vhosts
+  941  cd ..
+  942  ls
+  943  cd chef-repo/
+  944  ls
+  945  cd cookbooks/
+  946  ls
+  947  cd webserver/
+  948  ls
+  949  cd recipes/
+  950  ls
+  951  vi default.rb 
+  952  vi vhosts.rb
+  953  pwd
+  954  vi vhosts.rb
+  955  cd ..
+  956  ls
+  957  cd templates/
+  958  ls
+  959  cd default/
+  960  ls
+  961  vi custom-vhosts.erb
+  962  cd chef-repo/
+  963  ls
+  964  cd webserver.rb 
+  965  cd  cookbooks/
+  966  cd webserver/
+  967  ls
+  968  cd templates/
+  969  cd default/
+  970  ls
+  971  vi custom-vhosts.erb 
+  972  ls
+  973  vi index.html.erb 
+  974  cd ~/chef-repo/
+  975  ls
+  976  cd roles/
+  977  ls
+  978  vi starter.rb 
+  979  ifconfig
+  980  ls
+  981  ls
+  982  cd chef-repo/
+  983  ls
+  984  cd che
+  985  ls
+  986  cd cookbooks/
+  987  ls
+  988  cd jenkins/
+  989  ls
+  990  cd ..
+  991  ls
+  992  knife
+  993  chef-client -help
+  994  chef-client -o jenkins
+  995  ps -ef | grep jenkins
+  996  curl http://0.0.0.0:8080/jenkins
+  997  ls
+  998  cd chef-repo/
+  999  ls
+ 1000  cd chef-repo/
+ 1001  ls
+ 1002  ls -ltr
+ 1003  cd cookbooks/
+ 1004  ls
+ 1005  cd jenkins/
+ 1006  ls
+ 1007  cd recipes/
+ 1008  ls
+ 1009  vi default.rb 
+ 1010  cd ..
+ 1011  ls
+ 1012  cd ..
+ 1013  ls
+ 1014  cd java-1.7.0/
+ 1015  ls
+ 1016  cd recipes/
+ 1017  ls
+ 1018  vi default.rb 
+ 1019  knife 
+ 1020  knife bootstrap FQDN
+ 1021  knife bootstrap 107.170.202.15 
+ 1022  knife bootstrap option
+ 1023  chef-client
+ 1024  knife bootstrap option
+ 1025  knife bootstrap 107.170.202.15 
+ 1026  knife 
+ 1027  history
+ 1028  history >> out.txt
