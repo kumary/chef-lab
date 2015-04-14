@@ -6,12 +6,14 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+include_recipe "oracle-jdk-1.7"
 ant_pkgs=value_for_platform(
- ["debian","ubuntu"] => {"default" => ["ant","ant-contrib","ivy"]
+ ["debian","ubuntu"] => {"default" => ["ant","ant-contrib"]
  },
- ["centos","redhat","fedora"] => {"default" => ["ant","ant-contrib","ivy"]
+ ["centos","redhat","fedora"] => {"default" => ["ant","ant-contrib"]
  },
- "default" => ["ant","ant-contrib","ivy"]
+ "default" => ["ant","ant-contrib"]
 )
 
 
@@ -19,11 +21,9 @@ ant_pkgs.each do|pkg|
   package pkg do
     if pkg == "ant"
      action  :install
-  elsif pkg == "ant-contrib"
+  else pkg == "ant-contrib"
       action  :install
-  elsif pkg == "ivy"
-     action  :install
-  end
  end
+end
 end
 
